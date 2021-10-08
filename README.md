@@ -4,3 +4,7 @@ A simple Football Live Score project using Kotlin. Started on Aug 2020. Project 
 Self -developed project by developing an application related to Football Live Scores.
 
 It was first developed in August 2020 using the Kotlin language, however it was discontinued after 2 months due to a shift towards Flutter which is currently being developed.
+
+![image](https://user-images.githubusercontent.com/40099907/136544087-390973c5-769d-4713-8029-6d1bc11c0c56.png)
+
+![Screenshot_20211008-182616_MyBola App](https://user-images.githubusercontent.com/40099907/136544163-77aaaa8c-2eed-496d-b3f6-2e87c73818fa.jpg)
