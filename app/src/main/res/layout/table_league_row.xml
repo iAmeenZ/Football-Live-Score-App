@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:weightSum="10"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/col1"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_weight="0.2"
+                android:background="#36CA01"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/col2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/col3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/col4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/col5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/col6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/col7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/col8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/col9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/col10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/col11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#000000" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/pialaView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/liveTimeView"
+                    app:layout_constraintStart_toEndOf="@+id/pialaImageView"
+                    tools:text="@string/textview" />
+
+                <Spinner
+                    android:id="@+id/tm1View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:background="#88E372"
+                    android:entries="@array/tambahanMasa"
+                    android:gravity="center"
+                    android:text="@string/textview"
+                    android:textSize="12sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/liveTimeView"
+                    app:layout_constraintEnd_toStartOf="@+id/liveTimeView"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/pialaView" />
+
+                <TextView
+                    android:id="@+id/liveTimeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF0000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/dateView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@string/textview" />
+
+                <Spinner
+                    android:id="@+id/tm2View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="#88E372"
+                    android:entries="@array/tambahanMasa"
+                    android:gravity="center"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/liveTimeView"
+                    app:layout_constraintEnd_toStartOf="@+id/dateView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/liveTimeView" />
+
+                <TextView
+                    android:id="@+id/dateView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="#177E01"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/liveTimeView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:text="@string/textview"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/pialaImageView"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/hari_ini_liga_super_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp">
+
+                <ImageView
+                    android:id="@+id/firstMinus"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/minus"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/firstPlus"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="7dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/plus"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/firstMinus"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/timeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@string/textview" />
+
+                <TextView
+                    android:id="@+id/firstView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="end"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/timeView"
+                    app:layout_constraintEnd_toStartOf="@+id/firstImageView"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/firstPlus"
+                    tools:text="@string/textview" />
+
+                <ImageView
+                    android:id="@+id/firstImageView"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="5dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/timeView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/secondView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/timeView"
+                    app:layout_constraintEnd_toStartOf="@+id/secondMinus"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/secondImageView"
+                    tools:text="@string/textview" />
+
+                <ImageView
+                    android:id="@+id/secondImageView"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/timeView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/secondMinus"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="7dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/minus"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/secondPlus"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/secondPlus"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="5dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/plus"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

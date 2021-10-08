@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "231192221748",
+    "firebase_url": "https://bolasatu-efd56.firebaseio.com",
+    "project_id": "bolasatu-efd56",
+    "storage_bucket": "bolasatu-efd56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231192221748:android:01ad8033217a1f30619261",
+        "android_client_info": {
+          "package_name": "com.example.bolasatu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231192221748-bb0bnj6vl8usspt8a9smrgpsoqt2i716.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq5KLT9YT6fPYMfU5R9c8FRrUB2GmC88c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231192221748-bb0bnj6vl8usspt8a9smrgpsoqt2i716.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
